@@ -6,7 +6,9 @@ An online retail company based in the UK lacks visibility into which products dr
 ## Methodology:
 The dataset consists of 541,909 records upon arrival. A total of 10,624 negative quantities were found which consisted of returned goods and cancelled orders. 25% (135,080) of the customer IDs were blank representing guest checkouts of the site.Data cleaning and initial exploration was done in Python and exported to a CSV file. For simplicity and speed, United Kingdom transactions were excluded to focus on international purchasing behaviour and returns which were identified as InvoiceNo starting with “C” were also excluded bringing the needed records to approximately 45,000. Total sales, Salesday and Saleshour were created from the Invoicedate to be used for further analysis. 
 
-! [The dashboard] (<img width="1338" height="450" alt="final_dashboard" src="https://github.com/user-attachments/assets/aa7de7a8-8fbc-417d-8f54-fe340bc526db" />)
+
+
+<img width="1338" height="450" alt="final_dashboard" src="https://github.com/user-attachments/assets/aa7de7a8-8fbc-417d-8f54-fe340bc526db" />
 
 ## Key findings:
 * Between 2010 & 2011, total items sold was summed to **924,078** with the bestselling products being Rabbit Night Light constituting **28.20% (15,486)** of products sold alongside **Mini Paint Set Vintage** at **22.80% (12,601)** and **Pack of 72 Retrospot Cake Cases** selling **11,433** quantities. **Regency Cakestand 3-tier** pulling in **$32,211.45**, **Rabbit Night Light** brought in **$28,877** and **Round Snack Boxes set of 4 Woodland** at **$18,504.55(9.66%)** were top products revenue-wise. Other top products included **Spaceboy Lunch box** sold an amount of **$14,470** and **Dollygirl Lunch box** with **$12,595**
