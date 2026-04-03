@@ -6,6 +6,18 @@ An online retail company based in the UK lacks visibility into which products dr
 ## Link to the dataset
 [Click here to access the dataset](https://www.kaggle.com/datasets/vijayuv/onlineretail )
 
+## Tools & Skills Used
+Python (Jupyter Notebook)
+
+* Pandas: data loading (with latin-1 encoding), cleaning, and transformation; dropped ~497,000 rows through removal of cancellations (negative quantities), blank CustomerIDs, and UK transactions to isolate ~45,000 international records; engineered SalesDay and SalesHour columns from InvoiceDate
+* Matplotlib: exploratory visualisation during the cleaning and EDA phase. Exported cleaned dataset to .csv for downstream analysis
+
+Microsoft Excel
+
+* Power Query to ingest the cleaned .csv file
+* Pivot Tables used to aggregate data across products, customers, time periods
+* Pivot Charts used to visualise findings for the dashboard
+
 ## Methodology:
 The dataset consists of 541,909 records upon arrival. A total of 10,624 negative quantities were found which consisted of returned goods and cancelled orders. 25% (135,080) of the customer IDs were blank representing guest checkouts of the site. Data cleaning and initial exploration was done in Python and exported to a CSV file. For simplicity and speed, United Kingdom transactions were excluded to focus on international purchasing behaviour and returns which were identified as InvoiceNo starting with “C” were also excluded bringing the needed records to approximately 45,000. Total sales, Salesday and Saleshour were created from the Invoicedate to be used for further analysis. 
 
@@ -16,7 +28,7 @@ The dataset consists of 541,909 records upon arrival. A total of 10,624 negative
 ## Key findings:
 * Between **2010 & 2011**, total items sold was summed to **924,078** with the bestselling products being **Rabbit Night Light** constituting **28.20% (15,486)** of products sold alongside **Mini Paint Set Vintage** at **22.80% (12,601)** and **Pack of 72 Retrospot Cake Cases** selling **11,433** quantities. **Regency Cakestand 3-tier** pulling in **$32,211.45**, **Rabbit Night Light** brought in **$28,877** and **Round Snack Boxes set of 4 Woodland** at **$18,504.55(9.66%)** were top products revenue-wise. Other top products included **Spaceboy Lunch box** which sold an amount of **$14,470** and **Dollygirl Lunch box** with **$12,595**
 
-* The company’s total revenue for the period is **$1,575,267**. The company sells more on **Thursday**, **Wednesday** and **Tuesday** with the total of **$413,921.4**, **$310.338.3** and **$293,045.7** respectively for that period. Sales peak between the **10:00am** and **2:00pm** before a steady decline starts from **4:00pm**.
+* The company’s total revenue for the period is **$1,575,267**. The company sells more on **Thursday**, **Wednesday** and **Tuesday** with the total of **$413,921**, **$310.338** and **$293,045** respectively for those periods. Sales peak between the **10:00am** and **2:00pm** before a steady decline starts from **4:00pm**.
 
 * A total of **419** unique customers reflects international customers excluding the UK customer base patronised the business for that period with their **Average Order Value (AOV)** being **$824.90**. Top 3 repeat customers by invoice are **customer 14911** who bought **51%** of the inventory followed by **customer 14646** who bought **18%** and **customer 14156** who bought **14%** with the rest of inventory spread across with the remaining customers while **guests’ checkouts** were estimated at **13%**. On the revenue side, **customer 14646** generated **$280,206** in revenue, **customer 14911** generated **$143,825** followed by **customer 12415** who generated **$124,914** while **guest checkouts** totalled **$38,446** in revenue.
 
